@@ -16,6 +16,7 @@ SECRET_KEY = 'django-insecure-1(7u-d&@npq8_@o6%%o_*w=&s3p38#i9z8c2&*#k=rb_ot*fh@
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
+CSRF_TRUSTED_ORIGINS = ['https://hotel-booking-x82j.onrender.com/']
 
 
 # Application definition
@@ -38,6 +39,7 @@ CORS_ALLOWED_ORIGINS = [
     "https://sub.example.com",
     "http://localhost:8080",
     "http://127.0.0.1:5500",
+    "*",
 ]
 
 MIDDLEWARE = [
