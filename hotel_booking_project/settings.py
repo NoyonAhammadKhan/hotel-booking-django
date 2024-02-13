@@ -35,10 +35,9 @@ INSTALLED_APPS = [
     'django_filters',
 ]
 CORS_ALLOWED_ORIGINS = [
-    "https://example.com",
-    "https://sub.example.com",
     "http://localhost:8080",
     "http://127.0.0.1:5500",
+    "https://famous-queijadas-1c5608.netlify.app/"
 ]
 
 MIDDLEWARE = [

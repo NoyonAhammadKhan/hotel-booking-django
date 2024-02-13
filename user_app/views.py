@@ -6,6 +6,8 @@ from rest_framework_simplejwt.tokens import RefreshToken
 from django.contrib.auth import authenticate
 from rest_framework import status
 from user_app.renderers import UserRenderer
+from django.contrib.auth import logout
+from user_app.models import User
 # Create your views here.
 
 
@@ -43,3 +45,7 @@ class UserLoginView(APIView):
             return Response({'token': token, 'msg': 'user is successfully logged in'}, status=status.HTTP_200_OK)
         else:
             return Response({'errors': {'non_field_errors': ['Email or Password is not valid']}}, status=status.HTTP_400_BAD_REQUEST)
+
+
+def logout_view(request):
+    logout(request)
