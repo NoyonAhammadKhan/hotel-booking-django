@@ -39,7 +39,6 @@ CORS_ALLOWED_ORIGINS = [
     "https://sub.example.com",
     "http://localhost:8080",
     "http://127.0.0.1:5500",
-    "https://hotel-booking-x82j.onrender.com/"
 ]
 
 MIDDLEWARE = [
